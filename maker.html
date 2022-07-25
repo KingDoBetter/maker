@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>wxq's demo</title>
+    <script src="scripts/rem.min.js"></script>
+    <link rel="stylesheet" href="libs/cropper.min.css">
+    <link rel="stylesheet" href="styles/style.min.css">
+    <link rel="stylesheet" href="libs/swiper.min.css">
+    <link rel="stylesheet" href="styles/maker.min.css">
+</head>
+<body>
+
+<section class="home">
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="http://oking-electron.oss-cn-chengdu.aliyuncs.com/maker/zlqs1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="http://oking-electron.oss-cn-chengdu.aliyuncs.com/maker/zlqs2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="http://oking-electron.oss-cn-chengdu.aliyuncs.com/maker/zlqs3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="http://oking-electron.oss-cn-chengdu.aliyuncs.com/maker/zlqs4.png" alt="">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="home_discr">感受马术乐趣，驾驭全新生活方式！</div>
+
+    <button type="button">我要制作</button>
+
+    <footer>
+        <div>
+            <div>拍照</div>
+            <div>从手机相册选择</div>
+            <div>取消</div>
+        </div>
+    </footer>
+</section>
+
+<section class="maker">
+
+    <div id="aczone" class="acZone container js-container">
+        <div class="bgBox">
+            <img src="http://oking-electron.oss-cn-chengdu.aliyuncs.com/maker/001.png" alt="">
+        </div>
+        <img id="isEnter" src="" class="userImg js-image"/>
+        <div class="copylay"></div>
+        <div id="qrcode" style="width: 1rem;height: 1rem;position: absolute;right: 1rem;bottom:0.3rem;display: none"></div>
+    </div>
+
+    <input accept="image/*" capture="camera" type="file" id="file" name="img"/>
+
+    <section class="overlay">
+        <img src="http://oking-electron.oss-cn-chengdu.aliyuncs.com/maker/overlay.png" alt="">
+        <button type="button">我知道了</button>
+    </section>
+
+    <div class="downZone">
+        <section class="selectZone">
+            <ul>
+                <li class="active">
+                    <img src="images/mini/1.png" alt="">
+                    <img class="markPic" src="images/active.png" alt="">
+                </li>
+                <li><img src="images/mini/2.png" alt=""></li>
+                <li><img src="images/mini/3.png" alt=""></li>
+                <li><img src="images/mini/4.png" alt=""></li>
+                <li><img src="images/mini/5.png" alt=""></li>
+                <li><img src="images/mini/6.png" alt=""></li>
+            </ul>
+        </section>
+        <footer>
+            <button class="repeatSel" type="button">重新选图</button>
+            <button class="makeDo" type="button">生成海报</button>
+        </footer>
+    </div>
+
+</section>
+
+<section class="share">
+    <img src="images/tip.png" alt="">
+</section>
+
+<section class="loading">
+    <img src="images/Loading.gif" alt="">
+    <div>上传中，请稍等。。。</div>
+</section>
+
+<section class="trueSelect">
+    <div>请正确选择图片</div>
+</section>
+
+
+<script src="http://oking-electron.oss-cn-chengdu.aliyuncs.com/maker/jquery-1.12.4.min.js"></script>
+<script src="http://oking-electron.oss-cn-chengdu.aliyuncs.com/maker/swiper.min.js"></script>
+<script src="http://oking-electron.oss-cn-chengdu.aliyuncs.com/maker/html2canvas.js"></script>
+<script src="libs/Canvas2Image.js"></script>
+<script src="libs/cropper.min.js"></script>
+<script src="libs/exif.js"></script>
+<script src="libs/qrcode.min.js"></script>
+<script src="scripts/maker.min.js"></script>
+</body>
+</html>
